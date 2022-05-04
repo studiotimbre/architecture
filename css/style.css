@@ -1,0 +1,272 @@
+
+/* ref styling */
+#ref {
+  background-color: #fafafa;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 2em;
+  padding-left: 2em;
+  border-radius: 20px;
+}
+#ref p {
+  text-indent: 2em;
+  text-align: left;
+}
+#ref p::after {
+  content:" \A\A ";
+  white-space: pre; 
+}
+#ref a {
+  color: #d6d6d6;
+}
+
+
+div.gray {
+  color: #c2c2c2;
+}
+
+div.frame {
+text-align:center;
+  position:relative;
+  width:100%;
+  padding-bottom:56.25%;
+  margin-top:2em;
+  margin-bottom:2em;
+}
+
+#frame {
+  position:absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
+}
+
+body {
+	text-align:  center;
+	color:       #000;
+	font-family: georgia, serif;
+	font-size:   105%;
+	line-height: 1.4;
+	margin:      0;
+	padding:     2em 2em 5em;
+	background:  rgb(255, 255, 255);
+	margin:      auto;
+  width: 80%;
+	max-width:   45em;
+	color:       rgb(10, 10, 10);
+}
+
+a {
+	outline:         none !important;
+	font-weight:     bold;
+	text-decoration: none;
+}
+
+a:link {
+	color: #0061ff;
+}
+
+a:visited {
+	color: #002e7a;
+}
+
+a:hover {
+	color: #74a7fe;
+}
+
+a:active {
+	color:   #0042aa;
+	outline: none;
+}
+
+
+h1 {
+	font-size:   300%;
+	line-height: 1.2;
+	font-style:  normal;
+	margin:      2.5em 0 1em;
+}
+
+
+h2 {
+	font-weight: bold;
+	font-size:   200%;
+	line-height: 140%;
+	margin:      1.5em 0 0.75em;
+}
+
+h3 {
+	font-weight:    normal;
+	text-transform: uppercase;
+	font-size:      150%;
+	letter-spacing: 0.15em;
+	margin:         1.75em 0 0.75em;
+}
+
+h4 {
+	font-weight:    normal;
+	font-size:      150%;
+	letter-spacing: 0.1em;
+	margin:         1.5em 0 0.75em;
+}
+
+h5 {
+	font-weight: normal;
+	font-style:  italic;
+	font-size:   150%;
+	margin:      1.5em 0 0.75em;
+}
+
+h6 {
+	font-weight:    bold;
+	font-size:      110%;
+	margin:         1.5em 0 0.75em;
+  text-align:left;
+}
+
+p {
+	text-align: justify;
+	font-size:  100%;
+	margin:     1em 0 0;
+}
+
+p + p {
+	margin-bottom: 1em;
+	text-indent: 0em;
+}
+
+h1 + p {
+	text-indent: 0;
+}
+
+p + ul, p + ol, p + dl {
+	margin-bottom: 1.5em;
+}
+
+video {
+    width: 100%;
+    object-fit: scale-down;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	margin:     2em 0 1.5em 0;
+	width:      100%;
+	text-align: center;
+}
+
+figure img {
+	border: 0px solid #ccc;
+}
+
+figcaption {
+	font-size:   100%;
+	padding:     1em;
+	padding-top: 0.5em;
+	color:       #ccc;
+}
+
+blockquote {
+	padding-left: 2em;
+  padding-right: 2em;
+	margin:       1em 0;
+  text-align: left;
+  border-left: 10px solid #fafafa;
+}
+/*
+blockquote::before {
+  font-family: "Material Symbols Rounded";
+  content: "format_quote";
+  float: left;
+  font-size: 150%;
+  padding-right: 0.3em;
+  color: #ebebeb;
+}
+*/
+
+
+ul {
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 0em;
+  margin-bottom: 03em;
+  padding: 0px;
+  text-align: left;
+}  
+
+hr {
+	border:    none;
+	margin:    1.5em 0 1.5em;
+	font-size: 300%;
+	height:    1em;
+}
+
+hr:after {
+	font-family: 'Material Symbols Rounded';
+  content: "piano";
+}
+/*
+h1 + hr {
+	margin:    -0.5em 0 1.5em;
+	font-size: 400%;
+}
+*/
+ol#footnotes {
+	margin-top:   4.5em;
+	border-top:   1px solid #eee;
+	padding-top:  1em;
+	font-size:    80%;
+	padding-left: 1.5em;
+}
+
+ol#footnotes p {
+	text-indent: 0px;
+}
+
+figure + p {
+	text-indent: 0em !important;
+}
+
+pre {
+  text-align: left;
+  line-height: 1em;
+  background-color: #ffffff;
+  padding: 2em;
+  border-radius: 20px;
+}
+
+
+@media screen and (max-width: 736px) {
+	body {
+		padding:   1em 20px 1em 20px;
+    max-width: 80%;
+	}
+	h1 {
+		font-size: 250%;
+	}
+	h2 {
+		font-size: 150%;
+	}
+	h3, h4, h5 {
+		font-size: 140%;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white; 
+  }
+}
+
+/* oversize culprits solved  */
+a {
+	word-wrap: break-word;
+}
+figure > img{
+  width:95%;
+  min-height:100%;
+}
+pre {
+    white-space: pre-wrap;
+}
