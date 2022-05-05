@@ -295,13 +295,14 @@ pre {
 	}
 }
 
+/*
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
     color: white; 
   }
 }
-
+*/
 /* oversize culprits solved  */
 a {
 	word-wrap: break-word;
